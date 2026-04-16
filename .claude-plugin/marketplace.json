@@ -1,0 +1,34 @@
+{
+  "name": "timemator",
+  "owner": {
+    "name": "novanoticia",
+    "email": "novanoticia@icloud.com"
+  },
+  "metadata": {
+    "description": "Controla Timemator desde Claude: timers, consultas de tiempo y reportes",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "timemator",
+      "source": "./",
+      "description": "Control Timemator desde Claude: inicia/para timers, consulta tiempo trabajado, crea entradas manuales y genera reportes",
+      "version": "0.1.0",
+      "author": {
+        "name": "novanoticia"
+      },
+      "homepage": "https://github.com/novanoticia/claude-plugin-timemator",
+      "repository": "https://github.com/novanoticia/claude-plugin-timemator",
+      "license": "MIT",
+      "keywords": [
+        "timemator",
+        "time-tracking",
+        "productivity",
+        "mac",
+        "claude-plugin"
+      ],
+      "category": "productivity",
+      "tags": ["timemator", "time-tracking", "macos", "productivity"]
+    }
+  ]
+}
