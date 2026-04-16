@@ -1,0 +1,9 @@
+{
+  "name": "timemator",
+  "version": "0.1.0",
+  "description": "Control Timemator desde Claude: inicia/para timers, consulta tiempo trabajado, crea entradas manuales y genera reportes",
+  "author": {
+    "name": "Pablo"
+  },
+  "keywords": ["timemator", "time-tracking", "productivity", "mac"]
+}
