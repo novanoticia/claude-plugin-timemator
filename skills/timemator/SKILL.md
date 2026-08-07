@@ -5,7 +5,8 @@ description: >
   Triggers on "inicia el timer", "para el timer", "cuánto tiempo llevo hoy", "registra 2 horas de X",
   "resumen semanal de tiempo", "reporte Timemator", "cuánto he trabajado", "/timemator", "timer de",
   "start timer", "stop timer", "tiempo trabajado", "horas trabajadas", "pausa el timer".
-version: 0.1.0
+metadata:
+  version: "0.1.0"
 ---
 
 # Skill: Timemator
