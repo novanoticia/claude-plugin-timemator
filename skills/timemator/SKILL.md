@@ -6,10 +6,11 @@ description: >
   "resumen semanal de tiempo", "reporte Timemator", "cuánto he trabajado", "/timemator", "timer de",
   "start timer", "stop timer", "tiempo trabajado", "horas trabajadas", "pausa el timer".
 compatibility: >
-  macOS con Timemator instalado. Requiere un cliente capaz de ejecutar `osascript`
-  (Claude Code, o Cowork con el conector "Control your Mac") y permisos de
-  accesibilidad para el GUI scripting. No funcional en ChatGPT, Perplexity ni
-  Mistral: el skill se carga pero no puede actuar sobre la app.
+  macOS con Timemator instalado. Requiere que el cliente pueda ejecutar `osascript`
+  en esa misma máquina (Claude Code, o Cowork con el conector "Control your Mac";
+  cualquier cliente con acceso equivalente al Mac sirve) y permisos de
+  accesibilidad para el GUI scripting. Sin esa capacidad el skill se carga y puede
+  explicar la operación, pero no actúa sobre la app.
 metadata:
   version: "0.1.0"
 ---

@@ -7,10 +7,18 @@ Controla Timemator desde Claude usando lenguaje natural o el comando `/timemator
 > El paquete lleva el manifiesto portable `plugin.json` en la raíz del plugin y
 > el skill en `skills/timemator/SKILL.md`, así que cualquier cliente conformante lo descubre.
 >
-> **Sobre ChatGPT:** el formato es portable y ChatGPT cargará el skill, pero
-> **no podrá ejecutarlo**. Este plugin conduce Timemator por AppleScript, lo que exige un Mac con la app instalada y un cliente capaz de lanzar `osascript`. Fuera de ese entorno el skill se
-> carga y no puede hacer nada. Lo declara su campo `compatibility`, que es donde
-> la especificación de Agent Skills manda poner los requisitos de entorno.
+> **Qué necesita el cliente para ejecutarlo.** El skill viaja a cualquier cliente
+> conformante, pero para *controlar Timemator de verdad* el cliente tiene que poder
+> ejecutar `osascript` en el mismo Mac donde está la app, con permisos de accesibilidad
+> para el GUI scripting. Con esa capacidad funciona; sin ella el skill se carga y puede
+> explicar la operación, pero no actúa sobre la app. Está declarado en el campo
+> `compatibility`, que es donde la especificación de Agent Skills manda poner los
+> requisitos de entorno.
+>
+> Deliberadamente no lleva una lista de qué productos pueden y no pueden: las
+> capacidades de cada cliente cambian y una lista así envejece mal. Si no sabes si el
+> tuyo puede, pídele que ejecute
+> `osascript -e 'tell application "Timemator" to activate'` y observa si la app se abre.
 
 ## Qué puede hacer
 
