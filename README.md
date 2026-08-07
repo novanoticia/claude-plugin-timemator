@@ -2,6 +2,16 @@
 
 Controla Timemator desde Claude usando lenguaje natural o el comando `/timemator`.
 
+> **Compatible con [Agent Plugins 1.0.0](https://agent-plugins.org/specification)** — el formato portátil de empaquetado de la Agentic AI Foundation (OpenAI, Amazon,
+> Microsoft, Cursor y Vercel, con Google como *core maintainer*).
+> El paquete lleva el manifiesto portable `plugin.json` en la raíz del plugin y
+> el skill en `skills/timemator/SKILL.md`, así que cualquier cliente conformante lo descubre.
+>
+> **Sobre ChatGPT:** el formato es portable y ChatGPT cargará el skill, pero
+> **no podrá ejecutarlo**. Este plugin conduce Timemator por AppleScript, lo que exige un Mac con la app instalada y un cliente capaz de lanzar `osascript`. Fuera de ese entorno el skill se
+> carga y no puede hacer nada. Lo declara su campo `compatibility`, que es donde
+> la especificación de Agent Skills manda poner los requisitos de entorno.
+
 ## Qué puede hacer
 
 - **Iniciar y parar timers** para cualquier proyecto

@@ -5,6 +5,11 @@ description: >
   Triggers on "inicia el timer", "para el timer", "cuánto tiempo llevo hoy", "registra 2 horas de X",
   "resumen semanal de tiempo", "reporte Timemator", "cuánto he trabajado", "/timemator", "timer de",
   "start timer", "stop timer", "tiempo trabajado", "horas trabajadas", "pausa el timer".
+compatibility: >
+  macOS con Timemator instalado. Requiere un cliente capaz de ejecutar `osascript`
+  (Claude Code, o Cowork con el conector "Control your Mac") y permisos de
+  accesibilidad para el GUI scripting. No funcional en ChatGPT, Perplexity ni
+  Mistral: el skill se carga pero no puede actuar sobre la app.
 metadata:
   version: "0.1.0"
 ---
