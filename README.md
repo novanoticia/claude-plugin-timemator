@@ -1,7 +1,7 @@
 # Plugin: Timemator para Claude
 
 [![Versión en main](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fnovanoticia%2Fclaude-plugin-timemator%2Fmain%2Fplugin.json&query=%24.version&prefix=v&label=Versi%C3%B3n%20en%20main&color=blue)](https://github.com/novanoticia/claude-plugin-timemator/blob/main/plugin.json)
-**Última versión publicada:** [v0.1.0](https://github.com/novanoticia/claude-plugin-timemator/releases/tag/v0.1.0) · [Ver publicaciones](https://github.com/novanoticia/claude-plugin-timemator/releases)
+[![Última versión publicada](https://img.shields.io/github/v/release/novanoticia/claude-plugin-timemator?display_name=tag&label=%C3%9Altima%20versi%C3%B3n%20publicada&color=green)](https://github.com/novanoticia/claude-plugin-timemator/releases/latest)
 
 Controla Timemator desde Claude usando lenguaje natural o el comando `/timemator`.
 
