@@ -1,5 +1,7 @@
 # Plugin: Timemator para Claude
 
+[![Versión actual en main](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fnovanoticia%2Fclaude-plugin-timemator%2Fmain%2Fplugin.json&query=%24.version&prefix=v&label=Versi%C3%B3n%20actual%20en%20main&color=blue)](https://github.com/novanoticia/claude-plugin-timemator/blob/main/plugin.json)
+
 Controla Timemator desde Claude usando lenguaje natural o el comando `/timemator`.
 
 > **Compatible con [Agent Plugins 1.0.0](https://agent-plugins.org/specification)** — el formato portátil de empaquetado de la Agentic AI Foundation (OpenAI, Amazon,
