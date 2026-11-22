@@ -5,6 +5,49 @@
 
 Controla Timemator desde Claude usando lenguaje natural o el comando `/timemator`.
 
+**En esta página:** [En 3 pasos](#en-3-pasos) · [Qué puede hacer](#qué-puede-hacer) · [Instalación](#instalación) · [Configuración inicial](#configuración-inicial-una-sola-vez) · [Uso](#uso) · [Cómo funciona](#cómo-funciona) · [Limitaciones](#limitaciones-conocidas)
+
+## En 3 pasos
+
+1. **Instala el plugin** con los comandos de [Instalación](#instalación).
+2. **Da permiso de Accesibilidad** a la app que ejecuta Claude ([cómo](#1-permiso-de-accesibilidad)). Solo hace falta para iniciar y parar timers; las consultas funcionan sin él.
+3. **Pídeselo**: «¿cuánto llevo trabajado hoy?», «inicia el timer de Proyecto X» o `/timemator today`.
+
+## Qué puede hacer
+
+- **Iniciar y parar timers** para cualquier proyecto
+- **Consultar tiempo trabajado** hoy o esta semana
+- **Crear entradas manuales** ("registra 2h de diseño de ayer")
+- **Generar reportes** por proyecto y período
+
+## Instalación
+
+### Desde el marketplace (Claude Code)
+
+```
+/plugin marketplace add https://github.com/novanoticia/claude-plugin-timemator
+/plugin install timemator@timemator
+/reload-plugins
+```
+
+Lo que va después de la arroba es el nombre del **marketplace** (el campo `name` de
+`.claude-plugin/marketplace.json`), no un usuario de GitHub.
+
+### En Cowork
+
+Comprime la **raíz del repositorio** —donde están `plugin.json`, `.claude-plugin/` y
+`skills/`— y súbela en *Customize → Plugins → Upload*.
+
+### Actualizar
+
+```
+/plugin marketplace update timemator
+/plugin update timemator
+/reload-plugins
+```
+
+### Otros clientes
+
 > **Compatible con [Agent Plugins 1.0.0](https://agent-plugins.org/specification)** — el formato portátil de empaquetado de la Agentic AI Foundation (OpenAI, Amazon,
 > Microsoft, Cursor y Vercel, con Google como *core maintainer*).
 > El paquete lleva el manifiesto portable `plugin.json` en la raíz del plugin y
@@ -23,20 +66,13 @@ Controla Timemator desde Claude usando lenguaje natural o el comando `/timemator
 > tuyo puede, pídele que ejecute
 > `osascript -e 'tell application "Timemator" to activate'` y observa si la app se abre.
 
-## Qué puede hacer
-
-- **Iniciar y parar timers** para cualquier proyecto
-- **Consultar tiempo trabajado** hoy o esta semana
-- **Crear entradas manuales** ("registra 2h de diseño de ayer")
-- **Generar reportes** por proyecto y período
-
 ## Configuración inicial (una sola vez)
 
 ### 1. Permiso de Accesibilidad
 
 Para controlar los timers, macOS necesita que autorices el acceso de asistencia:
 
-1. **Preferencias del Sistema → Privacidad y Seguridad → Accesibilidad**
+1. **Ajustes del Sistema** (o **Preferencias del Sistema** antes de macOS Ventura) **→ Privacidad y Seguridad → Accesibilidad**
 2. Añade y activa la app que ejecuta Claude (Terminal o la app de Claude)
 
 > Sin este permiso, los reportes y consultas de tiempo seguirán funcionando.
